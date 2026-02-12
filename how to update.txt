@@ -1,0 +1,5 @@
+theme
+docker cp arhshop_app:/var/www/html/themes/classic D:\Development\amal\ps\arh\themes\arhshop
+
+db
+docker exec prestashop_db mysqldump --no-tablespaces -u ps_user -ppspassword prestashop ps_configuration ps_configuration_lang ps_module ps_module_shop ps_hook_module ps_hook > D:\Development\amal\ps\arh\prestashop_module_config.sql
